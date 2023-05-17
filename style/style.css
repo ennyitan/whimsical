@@ -1,8 +1,9 @@
-body{
+body {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
 }
-.background{
+.background {
     background-color: #7a06b6;
     border-radius: 50%;
     height: 8rem;
@@ -12,20 +13,27 @@ body{
     justify-content: center;
 }
 .polygon1 {
-    width: 30px;
-    height: 30px;
+    width: 1.9rem;
+    height: 1.9rem;
     border: 5px solid #ecd0f6;
     background-color: inherit;
     transform: rotate(45deg);  
     border-radius: 3px;
 }
-.polygon2{
-    width: 40px;
-    height: 40px;
+.polygon2 {
+    width: 2.5rem;
+    height: 2.5rem;
     border: none;
     outline: none;
     background-color: white;
     transform: rotate(45deg);  
     border-radius: 3px;
     margin-left: -1rem;
+    position: relative;
+    animation: shift 4s;
 }
+@keyframes shift {
+    from {left: -1rem;}
+    to {left: 0rem;}
+  }
+
